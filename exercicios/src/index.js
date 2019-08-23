@@ -1,8 +1,11 @@
 import React from 'react'
 import reactDom from 'react-dom'
+import Teste from './componentes/Teste';
 
-const elemento = <h2>Hello World</h2>
+// componentes sempre tem que ser com letra maiuscula
+//import Primeiro from './componentes/Primeiro';
+
 
 // semelhante a $('<h1>').html('React 2')
-reactDom.render(elemento, document.getElementById('root'))
+reactDom.render(<Teste nome="Gabriel" idade = {10} />, document.getElementById('root'))
 
